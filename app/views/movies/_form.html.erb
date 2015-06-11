@@ -10,31 +10,31 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :movie_length %><br>
-    <%= f.text_field :movie_length %>
+  <div class="form-group">
+    <%= f.label :movie_length %>
+    <%= f.text_field :movie_length, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :director %><br>
-    <%= f.text_field :director %>
+  <div class="form-group">
+    <%= f.label :director %>
+    <%= f.text_field :director, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :rating %><br>
-    <%= f.text_field :rating %>
+  <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.text_field :rating, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit "Submit", class: "btn btn-info btn-block" %>
   </div>
 <% end %>

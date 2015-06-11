@@ -11,15 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
+    <label for="start-rating">Rating</label>
     <div id="start-rating"></div>
   </div>
-  <div class="field">
-    <%= f.label :comment %><br>
-    <%= f.text_area :comment %>
+  <div class="form-group">
+    <%= f.label :comment %>
+    <%= f.text_area :comment, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit "Submit", class: "btn btn-info btn-block" %>
   </div>
 <% end %>
 
